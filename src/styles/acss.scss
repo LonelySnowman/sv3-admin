@@ -1,0 +1,12 @@
+/* 垂直居中布局 */
+.flex-center {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+/* 背景色 hover */
+.bg-hover-color:hover {
+   background-color: #f6f6f6;
+   cursor: pointer;
+}

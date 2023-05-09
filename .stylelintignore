@@ -1,0 +1,11 @@
+/dist/*
+/public/*
+public/*
+/mock/*
+/node_modules/*
+/plop-templates/*
+/types/*
+.npmrc
+.gitignore
+.husky
+.vscode

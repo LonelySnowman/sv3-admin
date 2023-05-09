@@ -1,0 +1,70 @@
+.el-scrollbar {
+   .el-menu {
+      /* el-menu 默认字体 */
+      .el-sub-menu__title,
+      .el-menu-item {
+         color: #a09c9c;
+      }
+
+      /* el-menu hover 状态样式 */
+      .el-sub-menu__title:hover,
+      .el-menu-item:hover {
+         color: #fff;
+         background-color: var(--menu-background-color);
+      }
+
+      .el-sub-menu__title:hover::before,
+      .el-menu-item:hover::before {
+         position: absolute;
+         top: 3px;
+         right: 8px;
+         bottom: 3px;
+         left: 8px;
+         background: #50b1bf;
+         border-radius: 3px;
+         opacity: 0.7;
+         content: '';
+      }
+
+      /* 激活路由样式 */
+      .el-menu-item.is-active * {
+         color: #fff;
+      }
+
+      .el-menu-item.is-active::before {
+         position: absolute;
+         top: 3px;
+         right: 8px;
+         bottom: 3px;
+         left: 8px;
+         background: var(--el-color-primary);
+         border-radius: 3px;
+         content: '';
+      }
+
+      /* menu背景色 */
+      background-color: var(--menu-background-color);
+
+      /* 消除边框 */
+      border-right: none;
+
+      /* 使文字浮与 ::before 伪元素上方 */
+      span {
+         position: relative;
+      }
+
+      /* 文字不可选取 */
+      & * {
+         user-select: none;
+      }
+   }
+
+   background-color: var(--menu-background-color);
+}
+
+/* element ui header 变量 */
+body .el-header {
+   height: min-content;
+
+   --el-header-padding: 0;
+}
